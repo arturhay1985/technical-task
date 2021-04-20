@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: rgb(160, 198, 248);
+}
+
+#root {
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus,
+select:focus {
+    border: 0px;
+    outline: none;
+}
+
+input,
+select {
+    width: 200px;
+    height: 20px;
+    display: block;
+    border: 0px;
+}
+
+button {
+    background-color: rgb(181, 95, 1);
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    width: 200px;
+    margin-top: 16px;
+    border: 0px;
+    display: block;
+    margin-left: auto;
+}
+
+
+.formGroup label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.table {
+    width: 200px;
+    border-collapse: collapse;
+    background: white;
+    margin: 30px 0;
+    margin-left: auto;
+}
+
+tr>td {
+    padding: 7px;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.error {
+    display: none;
+    flex-basis: 100%;
+    text-align: right;
+    padding: 5px;
+    color: red;
+}
+
+.error.isVisible {
+    display: block;
+}
